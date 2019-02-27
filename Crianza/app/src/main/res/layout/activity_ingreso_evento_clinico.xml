@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/ingresoEventoClinico_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txtIdTernero"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Ternero"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/dte_FechaDesde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtIdEnfermedad"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Enfermedad"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/dte_FechaDesde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtIdTernero"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/dte_FechaDesde"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="2dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Fecha Desde: "
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/dte_FechaHasta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/dte_FechaHasta"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="2dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Fecha Hasta: "
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtObservaciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dte_FechaDesde" />
+
+    <EditText
+        android:id="@+id/txtObservaciones"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Observaciones:"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dte_FechaHasta" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="96dp"
+        android:onClick="registroEventoClinico"
+        android:text="Ingresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/dte_FechaDesde"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

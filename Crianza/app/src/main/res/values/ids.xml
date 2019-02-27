@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="alimentos_container" type="id" />
+    <item name="terneros_container" type="id" />
+    <item name="consumoAlimento_container" type="id" />
+    <item name="modificarAlimento_container" type="id" />
+    <item name="historicoAlimento_container" type="id" />
+    <item name="registroPeso_container" type="id" />
+    <item name="historicoPeso_container" type="id" />
+    <item name="ingresoEventoClinico_container" type="id" />
+    <item name="enfermedades_container" type="id" />
+    <item name="historicoEventoClinico_container" type="id" />
+    <item name="ingresoTernero_container" type="id" />
+    <item name="listadoTernero_container" type="id" />
+    <item name="modificarUsuario_container" type="id" />
+    <item name="bajaUsuario_container" type="id" />
+</resources>

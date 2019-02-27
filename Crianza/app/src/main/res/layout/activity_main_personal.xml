@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_green_light"
+    tools:context="com.crianza.activities.MainAdministradorActivity">
+
+    <Button
+        android:id="@+id/btnAlimento"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="menuAlimento"
+        android:text="Alimento"
+        app:layout_constraintBottom_toTopOf="@+id/btnEventoClinico"
+        app:layout_constraintEnd_toStartOf="@+id/btnTernero"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnPeso"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="menuPeso"
+        android:text="Peso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTernero" />
+
+    <Button
+        android:id="@+id/btnEventoClinico"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="132dp"
+        android:onClick="menuEventoClinico"
+        android:text="Evento Clinico"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnPeso"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlimento" />
+
+    <Button
+        android:id="@+id/btnTernero"
+        android:layout_width="130dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="menuTernero"
+        android:text="Ternero"
+        app:layout_constraintBottom_toTopOf="@+id/btnPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>

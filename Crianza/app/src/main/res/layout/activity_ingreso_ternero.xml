@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/ingresoTernero_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txtNroCaravana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Nro Caravana: "
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtIdMadre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Nro Caravana: " />
+
+    <EditText
+        android:id="@+id/txtIdMadre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="ID Madre: "
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtIdPadre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNroCaravana"
+        tools:text="ID Madre: " />
+
+    <EditText
+        android:id="@+id/txtIdPadre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="ID Padre: "
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtIdGuachera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdMadre"
+        tools:text="ID Padre: " />
+
+
+    <EditText
+        android:id="@+id/txtIdGuachera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="ID Guachera: "
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdPadre"
+        tools:text="ID Guachera: " />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Peso Nacimiento: "
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/sp_tipoParto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdGuachera"
+        tools:text="Peso Nacimiento: " />
+
+    <Spinner
+        android:id="@+id/sp_tipoParto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/sp_tipoRaza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+    <Spinner
+        android:id="@+id/sp_tipoRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/dte_FechaNacimiento"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_tipoParto" />
+
+    <EditText
+        android:id="@+id/dte_FechaNacimiento"
+        android:layout_width="216dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="90dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Fecha Nacimiento: "
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_tipoRaza" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="319dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="145dp"
+        android:onClick="ingresoTernero"
+        android:text="Ingresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
